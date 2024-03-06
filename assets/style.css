@@ -1,1 +1,101 @@
-h1 {color: brown;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* color code varibales can be reused when needed */
+:root {
+
+    --dark-primary: #1b1f24;
+    --white-primary: white;
+    --blue-primary: #12bdff;
+
+
+}
+
+
+
+/* change font for whole body tag */
+
+body { font-family  : 'Roboto', sans-serif;
+        }
+
+
+/* button styling for resume download*/
+
+header button {
+    padding:10px 20px ;
+    background-color: var(--dark-primary);
+    border: 1px solid var(--blue-primary);
+    color: var(--blue-primary);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header {
+    background-color: var(--dark-primary);
+    
+    color: var(--white-primary);
+    /* to bring logo after nav bar after download cv we need to have display tag */
+    display: flex;
+    /* justify the all three comp on header tag */
+    /* justify-content — controls alignment of all items on the main axis. 
+ */
+    justify-content: space-around;
+
+    /* align-items — controls alignment of all items on the cross axis.
+ */
+ align-items: center;
+}
+
+/* to move all list tag from vertical to horizantal */
+
+
+ul{
+    display: flex;
+    
+}
+
+
+ul li {
+    margin-right: 20px;
+    list-style: none;
+    text
+}
+/* how to change achor tag color only for tag under nested inside ul li */
+ul li a{
+    color: var(--white-primary);
+    /* basically calling a tag from li nested inside ul thats why ul li a */
+    text-decoration: none;
+    letter-spacing: 1px;
+} 
+
+
+/* when over it will change into  */
+ul li a:hover {
+    color: var(--blue-primary);
+}
+
+
+/* when i over button it shud show pointer */
+
+header button:hover {
+    cursor: pointer;
+    color: var(--white-primary);
+    background-color: var(--blue-primary);
+   
+}
+
+/* class are refered in css using dot
+    # are refered as ID in css
+
+*/
+
+header .logo {
+    font-weight:bold 600;
+    color: var(--blue-primary);
+    letter-spacing: 3px;
+    
+}
