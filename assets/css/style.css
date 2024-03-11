@@ -55,11 +55,12 @@ header {
 
 ul{
     display: flex;
+    padding:0px;
     
 }
 
 
-ul li {
+header ul li {
     margin-right: 20px;
     list-style: none;
     
@@ -102,3 +103,82 @@ header .logo {
 
 
 /* Day 3 ui ux css files */
+
+
+/* section hero home page
+ */
+
+ section.hero-section {
+    background-color: var(--dark-primary);
+    color: var(--white-primary);
+    display: flex;
+    align-items: center;
+    padding: 20px 150px 20px 150px;
+    justify-content: center;
+    
+    
+ }
+
+
+ section.hero-section .hero-section-title {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+
+ }
+
+ section.hero-section .hero-section-describe {
+    font-size: 20;
+    font-family:  'Courier New', Courier, monospace;
+    color: lightgray;
+ }
+
+
+section.hero-section .hero-section-social-icon li{
+    padding-right: 14px;
+    list-style: none;
+    color: var(--white-primary);
+}
+
+.fa-facebook-official:hover{
+    color:#316FF6 ;
+} 
+
+.fa-github-square:hover{
+    color: black;
+}
+
+.fa-linkedin-square:hover{
+    color:#0A66C2 ;
+}
+
+.fa-twitter-square:hover{
+    color: #1DA1F2;
+}
+
+
+
+
+section button {
+    padding: 10px 10px;
+    border: 1px solid var(--blue-primary);
+    background-color: var(--dark-primary);
+    color: var(--blue-primary);
+    border-radius: 5px ;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+    -ms-border-radius: 5px ;
+    -o-border-radius: 5px ;
+}
+
+section button:hover {
+
+    background-color:var(--blue-primary) ;
+    color: var(--white-primary);
+    cursor: pointer;
+
+}
+
+
+
+
+ 
